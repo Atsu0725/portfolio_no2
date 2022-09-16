@@ -1,0 +1,17 @@
+/*タブレット向け*/
+/*
+@media all and (max-width:1300px){
+    .lesson{
+        width:50%;
+    }
+    
+}
+
+/*スマホ向け*/
+/*
+@media all and (max-width:670px){
+    .lesson{
+        width:100%;
+    }
+}
+*/
