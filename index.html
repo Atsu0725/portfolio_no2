@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>入門編</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             
             <div class="top_icon">
-                <h3>MUデザイン</h3>
+                <a href="#" style="text-decoration:none;">
+                <h3>Portfolio Gallery</h3></a>
             </div>
                 <div class="top_menu">
-                <a style="text-decoration:none;" href="#">レッスン</a>
-                <a style="text-decoration:none;" href="#">言語</a>
-                <a style="text-decoration:none;" href="#">ログイン</a>
+                <a style="text-decoration:none;" href="#work">List of portfolio</a>
+                <a style="text-decoration:none;" href="#about">About</a>
             </div>
         </div>
     </header>
@@ -26,46 +26,68 @@
     <div class="main-wrapper">
         <div class="main-container">
             <div>
-                <h1>WEB制作を学ぼう!!</h1>
-            </div>
-            <div>
-                <a class="btn" href="#" style="text-decoration:none;">ログインはこちら</a>
+                <h1>Please check our works</h1>
             </div>
         </div>
     </div>
 
-    <div class="lesson-wrapper">
-        <h2>レッスン</h2>
-        <div class="lessons">
-            <div class="lesson">
-                <img src="/Users/atsuo/Desktop/WEB_Dev/Mock PJ No1/images/img1.png" alt="">
-                <h1>HTML&CSS</h1>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    <div class="work-wrapper">
+        <h1>Portfolio</h1>
+        <div class="works" id="work">
+            <div class="work">
+                <a href="http://kannai.conohawing.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
+                    <img src="hp01-image.jpg" alt="">
+                    <h2>医療系HP</h2>
+                    <p>ゼロからWORDPRESSのテーマ化済み、HTML・CSS・JSにて実装しております。</p>
+                </a>
             </div>
-            <div class="lesson">
-                <img src="/Users/atsuo/Desktop/WEB_Dev/Mock PJ No1/images/img2.png" alt="">
-                <h1>jQuery</h1>
-                <p>ああああテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="work">
+                <a href="https://www.english-learning-lab.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
+                    <img src="hp02-image.jpg" alt="">
+                    <h2>英語ブログ</h2>
+                    <p>WORDPRESS無料テーマのcocoonを利用、一部HTML・CSS・PHPを改修にて実装しております。</p>
+                </a>
             </div>
-            <div class="lesson">
-                <img src="/Users/atsuo/Desktop/WEB_Dev/Mock PJ No1/images/img3.png" alt="">
-                <h1>PHP</h1>
-                <p>いいいいテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="work">
+                <a href="https://itenglish-forpm.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
+                    <img src="hp03-image.jpg" alt="">
+                    <h2>トラベルブログ</h2>
+                    <p>ゼロからWORDPRESSのテーマ化済み、HTML・CSS・PHPにて実装にて実装しております。</p>
+                </a>
             </div>
-            <div class="lesson">
-                <img src="/Users/atsuo/Desktop/WEB_Dev/Mock PJ No1/images/img4.png" alt="">
-                <h1>WordPress</h1>
-                <p>ううううテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="work">
+                <a href="https://atsu0725.github.io/Atsu0725_No2.github.io/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
+                    <img src="hp04-image.jpg" alt="">
+                    <h2>企業系HP</h2>
+                    <p>GITHUBにて公開、HTML＋CSSにて実装しております。</p>
+                </a>
             </div>
-            
         </div>
-        <div class="btn2">
-            <a class="btn" href="#" style="text-decoration:none;">WEB制作を始める</a>
+        
+        <h1>About</h1>
+        <div class="about" id="about">
+            <ul class="about__detail">
+                <li>
+                    <h2>本サイトについて</h2>
+                    <br>
+                    <p>本ポートフォリオページは営業活動のために作成。適時営業用の作品を掲示するもの。</p>
+                </li>
+                <br>
+                <li>
+                    <h2>管理者について</h2>
+                    <img src="about-image.jpg" alt="">
+                    <h3>まさお</h3>
+                    <p>
+                        22年8月にコーダーとしてWEB制作開始。現在、WEB制作案件の営業活動中。<br>
+                        本業はシステム開発のプロジェクトマネージャ。<br>
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
 
     <footer>
-        <p>@はせがわ</p>
+        <p>@まさお</p>
     </footer>
 
 </body>

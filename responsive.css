@@ -1,17 +1,23 @@
 /*タブレット向け*/
-/*
-@media all and (max-width:1300px){
-    .lesson{
+
+@media all and (max-width:900px){
+    .work{
         width:50%;
+    }
+    .main-container h1{
+        font-size:40px;
     }
     
 }
 
 /*スマホ向け*/
-/*
-@media all and (max-width:670px){
-    .lesson{
+
+@media all and (max-width:400px){
+    .work{
         width:100%;
     }
+    .main-container h1{
+        font-size:33px;
+    }
 }
-*/
+
