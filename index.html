@@ -1,94 +1,126 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="Ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/2018fd5472.js" crossorigin="anonymous"></script>
+    <title>Design Comprehensive No1</title>
 </head>
+
 <body>
-    <header>
-        <div class="header-container">
-            
-            <div class="top_icon">
-                <a href="https://atsu0725.github.io/" style="text-decoration:none;">
-                <h3>Portfolio Gallery</h3></a>
+    <div class="container">
+        <header>
+             <!--①JAVAで画面内リンク-->
+            <div class="headWrapper">
+                <div class="icon" id="topBtn">クリ★スタ</div>
+                <ul class="headMenu" style="list-style: none;">
+                    <li>    <a id="topBtn" href="#service" style="text-decoration:none;">Service</a></li>
+                    <li>    <a id="topBtn" href="#news" style="text-decoration:none;">News</a></li>
+                    <li>    <a id="topBtn" href="#access" style="text-decoration:none;">Access</a></li>
+                </ul>
+
+                <div class="humberger">
+                    <p id="listClose"><span><i class="fa-solid fa-bars"></i></span> </p>
+                </div>
+                <!--                <p id="listOpen" class="cross"><i class="fa-solid fa-xmark"></i></p>-->
+                <ul class="headMenu_hum" style="list-style: none;">
+                    <li>    <a id="topBtn_hum1" href="#service" style="text-decoration:none;">Service</a></li>
+                    <li>    <a id="topBtn_hum2" href="#news" style="text-decoration:none;">News</a></li>
+                    <li>    <a id="topBtn_hum3" href="#access" style="text-decoration:none;">Access</a></li>
+                </ul>
+
             </div>
-                <div class="top_menu">
-                <a style="text-decoration:none;" href="#work">List of portfolio</a>
-                <a style="text-decoration:none;" href="#about">About</a>
+        </header>
+        <div class="main">
+            <div class="backImg">
+                <h1>Crista.Design</h1>
+            </div>
+            <div class="about" id="about">
+                <h1>About</h1>
+                <h2>ミニマルで<br>洗練されたデザインを。</h2>
+                <p>近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+            </div>
+            <div class="serviceTop" id="service">
+                <h1>Service</h1>
+                <div class="services">
+                    <div class="service child_1">
+                        <h2>リリース時のサポートで<br>サービスのブランディングを</h2>
+                        <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+                    </div>
+                    <div class="service child_2">
+                            <img src="/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/service-image@2x.jpg" alt="">
+                    </div>
+                    <div class="service child_3">
+                        <h2>リリース後のサポートで<br>効果を最大化させる</h2>
+                        <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+                    </div>
+                    <div class="service child_4">
+                        <img src="/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/service-image02@2x.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="newsTop" id="news">
+                <h1>News</h1>
+                <ul class="newsList"style="list-style: none;">
+                    <li class="news">
+                        <a href="" style="text-decoration:none;"> 
+                            <div>
+                                <img src="/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/card-image3@2x.jpg" alt="">
+                                <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news">
+                        <a href="" style="text-decoration:none;">
+                            <div>
+                                <img src="/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/card-image2@2x.jpg" alt="">
+                                <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。<</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="news">
+                        <a href="" style="text-decoration:none;">
+                            <div>
+                                <img src="/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/card-image1@2x.jpg" alt="">
+                                <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="inquery" id="access">
+                <h1>お問い合わせ</h1>
+                <form action="confirm.html" method="POST">
+                    <ul class="inqueryForm"> <!--②入力チェック-->
+                        <li>担当者名<span class="msg"></span></li>
+                        <input type="text" name="username" id="check1">
+
+                        <li>電話番号<span class="msg"></span></li>
+                        <input type="text" name="telNumber" id="check2">
+                        
+                        <li>メールアドレス<span class="msg"></span></li>
+                        <input type="email" name="mailAddress" id="check3">
+                        
+                        <li>お問い合わせ内容<span class="msg"></span></li>
+                        <textarea name="inqDetail" id="check4" cols="30" rows="10"></textarea>
+                        
+                        <div class="btnWrapper"> <!--③画面遷移-->
+                            <input id="sendForm" class="btn" type="submit">
+                            <!--    <a id="sendForm" class="btn" href="confirm.html" style="text-decoration:none;">送信</a> -->
+                        </div>
+                    </ul>
+                </form>
             </div>
         </div>
-    </header>
-    
-    <div class="main-wrapper">
-        <div class="main-container">
-            <div>
-                <h1>Please check our works</h1>
-            </div>
-        </div>
+        <footer>
+            <p>©︎crest.design all rights reserved</p>
+        </footer>
     </div>
-
-    <div class="work-wrapper">
-        <h1>Portfolio</h1>
-        <div class="works" id="work">
-            <div class="work">
-                <a href="http://kannai.conohawing.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-                    <img src="hp01-image.jpg" alt="">
-                    <h2>医療系HP</h2>
-                    <p>ゼロからWORDPRESSのテーマ化済み、HTML・CSS・JSにて実装しております。</p>
-                </a>
-            </div>
-            <div class="work">
-                <a href="https://www.english-learning-lab.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-                    <img src="hp02-image.jpg" alt="">
-                    <h2>英語ブログ</h2>
-                    <p>WORDPRESS無料テーマのcocoonを利用、一部HTML・CSS・PHPを改修にて実装しております。</p>
-                </a>
-            </div>
-            <div class="work">
-                <a href="https://itenglish-forpm.com/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-                    <img src="hp03-image.jpg" alt="">
-                    <h2>トラベルブログ</h2>
-                    <p>ゼロからWORDPRESSのテーマ化済み、HTML・CSS・PHPにて実装にて実装しております。</p>
-                </a>
-            </div>
-            <div class="work">
-                <a href="https://atsu0725.github.io/Atsu0725_No2.github.io/" style="text-decoration:none;" target="_blank" rel="noopener noreferrer">
-                    <img src="hp04-image.jpg" alt="">
-                    <h2>企業系HP</h2>
-                    <p>GITHUBにて公開、HTML＋CSSにて実装しております。</p>
-                </a>
-            </div>
-        </div>
-        
-        <h1>About</h1>
-        <div class="about" id="about">
-            <ul class="about__detail">
-                <li>
-                    <h2>本サイトについて</h2>
-                    <br>
-                    <p>本ポートフォリオページは営業活動のために作成。適時営業用の作品を掲示するもの。</p>
-                </li>
-                <br>
-                <li>
-                    <h2>管理者について</h2>
-                    <img src="about-image.jpg" alt="">
-                    <h3>まさお</h3>
-                    <p>
-                        22年8月にコーダーとしてWEB制作開始。現在、WEB制作案件の営業活動中。<br>
-                        本業はシステム開発のプロジェクトマネージャ。<br>
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <footer>
-        <p>@まさお</p>
-    </footer>
-
+    <script src="JS/script.js"></script>
 </body>
 </html>
