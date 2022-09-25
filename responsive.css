@@ -1,23 +1,65 @@
-/*タブレット向け*/
-
-@media all and (max-width:900px){
-    .work{
-        width:50%;
-    }
-    .main-container h1{
-        font-size:40px;
-    }
-    
-}
+@charset "utf-8";
 
 /*スマホ向け*/
+@media all and (max-width:670px){
+    .backImg{
+        background-image: url("/Users/atsuo/Desktop/WEB_Dev/Camp PJ No1/Img/fv-bgi_sp@2x.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-@media all and (max-width:400px){
-    .work{
-        width:100%;
+        height:590px;
     }
-    .main-container h1{
-        font-size:33px;
+    .backImg h1{
+        font-size:40px;
+        padding:20px 40px;
     }
+    .serviceTop{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .services{
+        display: block;
+        text-align: center;
+    }
+    .service{
+        width:500px;
+    }
+    .inqueryForm{
+        max-width:500px;
+    }
+
+    /*ハンバーガーメニュー*/
+    .headWrapper{
+        justify-content: space-between;
+    }
+    .icon{
+        margin:0 20px;
+    }
+    .headMenu{
+        display:none;
+    }
+    .headMenu_hum{
+        display:none;
+        position:fixed;
+        top:50px;
+        height: calc(100% - 50px);
+        width: 100%;
+        background-color: white;
+        opacity: 0.9;
+        text-align: center;
+    }
+    .headMenu_hum a{
+        display: inline-block;
+        color:black;
+        /* 質問②上下中央よせしたい。position+transition??*/
+        margin-top: 50px;
+        font-size:30px;
+    }
+    .humberger{
+        display:block;
+        margin:0 20px;
+    }
+
+
 }
-
