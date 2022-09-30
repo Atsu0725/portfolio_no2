@@ -64,7 +64,7 @@ header{
 .backImg{
     height:500px;
     margin:0 auto;
-    background-image: url("/fv-bgi@2x.jpg");
+    background-image: url("fv-bgi@2x.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
